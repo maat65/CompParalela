@@ -7,7 +7,7 @@
 
 int main(void)
 {
-  int aux1, aux2, aux3; /* Variáveis para armazenar a conta */
+  int aux1, aux2; /* Variáveis para armazenar a conta */
   int i, num, j, x; /* Variáveis */
   int fd[2]; /* File descriptors pro Pipe*/
   pid_t pid; /* Variável para armazenar o pid*/
@@ -28,7 +28,7 @@ int main(void)
     perror("Erro");
     exit(1);
   }
-  /* Processo Pai*/
+  /* Processo Pai faz a multiplicação da metade pra cima*/
   if (pid > 0){
     close(fd[0]);
     for(i = 1; j > aux; j--)
@@ -36,7 +36,7 @@ int main(void)
     write(fd[1], &i, sizeof(i));
     exit(0);
   }
-  /* Processo Filho*/
+  /* Processo Filho faz a multiplicação da metade pra baixo*/
   else{
     close(fd[1]);
     for(x = 1; aux > 1; aux--)

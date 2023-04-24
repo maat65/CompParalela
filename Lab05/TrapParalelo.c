@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <omp.h>
 
+double f(double x){
+  return exp(x);
+}
+
 void Trap(double a, double b, int n, double* global_result_p){
   double h, x, my_result;
   double local_a, local_b;

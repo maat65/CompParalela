@@ -13,9 +13,9 @@ void Trap(double a, double b, int n, double* resultado){
   h = (b-a)/n;
   for(i = 1; i <= n-1; i++){
     x = a + i*h;
-    resultado += f(x);
+    *resultado += f(x);
   }
-  resultado = resultado * h;
+  *resultado = resultado * h;
 }
 
 int main(int argc, char* argv[]){

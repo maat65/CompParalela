@@ -37,18 +37,13 @@ void printResultado(int y[3]){
 }
 
 int main(){
-  double time_spent = 0.0;
-  clock_t begin = clock();
   printf("Print matriz:\n");
   printMatriz(A);
   printf("Print vetor:\n");
   printVetor(x);
-  multi();
+  mult();
   printf("Resultado da multiplicação matriz-vetor:\n");
   printResultado(y);
-  clock_t end = clock();
-  time_spent += (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("\nTempo de execução é de %f segundos", time_spent);
  
   return 0;
 }

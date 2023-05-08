@@ -15,7 +15,7 @@ void Trap(double a, double b, int n, double* resultado){
     x = a + i*h;
     *resultado += f(x);
   }
-  *resultado = resultado * h;
+  *resultado = *resultado * h;
 }
 
 int main(int argc, char* argv[]){

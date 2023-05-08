@@ -7,4 +7,9 @@ Baixar biblioteca GMP com comando: sudo apt install libgmp-dev
 
 
 Compilar com: gcc projParalelo.c -o projParalelo -fopenmp -lgmp
+
+
+Teste com n = 10000
+
+
 ![image](https://user-images.githubusercontent.com/83376070/236942159-332a5aea-80d5-4688-ad77-1f6378d07b00.png)

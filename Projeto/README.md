@@ -15,3 +15,13 @@ Speedup = serial / paralelo ≅ 22,6212
 
 
 ![image](https://user-images.githubusercontent.com/83376070/236942159-332a5aea-80d5-4688-ad77-1f6378d07b00.png)
+
+
+#Print Projetov2
+
+O tempo aumentou para 3.792s, porém agora funciona corretamente ao usar mais de uma thread.
+
+Novo Speedup ≅
+
+
+![image](https://github.com/maat65/CompParalela/assets/83376070/a8f5917e-2f4f-40eb-9a7a-5956a0f71abd)

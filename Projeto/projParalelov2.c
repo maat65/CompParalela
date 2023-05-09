@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
             }
             mpf_ui_div(termo_i, 1, termo_i); // calcula 1/termo_i e armazena em termo_i
             mpf_add(aux, aux, termo_i); // aux += termo_i
-            mpf_clear(termo_i);
+            mpf_clear(termo_i); // libera a variavel termo_i
         }
 
         #pragma omp critical
@@ -40,12 +40,12 @@ int main(int argc, char *argv[]) {
             mpf_add(euler, euler, aux); // euler += aux
         }
 
-        mpf_clears(aux, fat, NULL); // limpa as variáveis aux e fat
+        mpf_clears(aux, fat, NULL); // libera as variáveis aux e fat
     }
 
     gmp_printf("Euler = %.3500Ff\n", euler); // imprime o valor final de euler
 
-    mpf_clear(euler); // limpa a variável euler
+    mpf_clear(euler); // libera a variável euler
 
     return 0;
 }

@@ -21,7 +21,7 @@ Speedup = serial / paralelo ≅ 22,6212
 
 O tempo aumentou para 3.792s, porém agora funciona corretamente ao usar mais de uma thread.
 
-Novo Speedup ≅
+Novo Speedup ≅ 1,18117
 
 
 ![image](https://github.com/maat65/CompParalela/assets/83376070/a8f5917e-2f4f-40eb-9a7a-5956a0f71abd)

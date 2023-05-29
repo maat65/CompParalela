@@ -31,6 +31,8 @@ Novo Speedup ≅ 1,18117
 
 Precisão = 50000 demorou cerca de 7 minutos
 
+50002 digitos corretos
+
 ![image](https://github.com/maat65/CompParalela/assets/83376070/24ef37ac-feb1-481d-96cb-ef8f947b856f)
 
 ![image](https://github.com/maat65/CompParalela/assets/83376070/ff8e3906-6adb-4b7d-b7bf-1524e5b65e4d)

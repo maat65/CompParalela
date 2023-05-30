@@ -29,10 +29,14 @@ Novo Speedup ≅ 1,18117
 
 # Testes finais
 
-Precisão = 50000 demorou cerca de 7 minutos
+Com N = 20000 e precisão = 50000, teve 15064 digitos corretos
 
-50002 digitos corretos
+Com N = 20000 e precisão = 100000, teve 30110 digitos corretos em 4m39s
 
-![image](https://github.com/maat65/CompParalela/assets/83376070/24ef37ac-feb1-481d-96cb-ef8f947b856f)
+![image](https://github.com/maat65/CompParalela/assets/83376070/17c9feb4-97ab-4c1f-9f78-cc0c7f5c4cc0)
 
-![image](https://github.com/maat65/CompParalela/assets/83376070/ff8e3906-6adb-4b7d-b7bf-1524e5b65e4d)
+Com N = 30000 e precisão = 120000, teve 36121 digitos corretos em 16m53s
+
+![image](https://github.com/maat65/CompParalela/assets/83376070/6490327f-e2bf-4bb2-9f85-c817fa611c50)
+
+

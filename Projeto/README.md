@@ -39,4 +39,8 @@ Com N = 30000 e precisão = 120000, teve 36121 digitos corretos em 16m53s
 
 ![image](https://github.com/maat65/CompParalela/assets/83376070/6490327f-e2bf-4bb2-9f85-c817fa611c50)
 
+E por ultimo com N = 50000 e precisão = 200000, tivemos 60204 digitos corretos por aproximadamente 1h, porém o tempo mostrado na tela é de 21m58s, pois durante a execução, o tempo no ambiente AWS acabou quando estava esperando por cerca de 40m
+
+![image](https://github.com/maat65/CompParalela/assets/83376070/01523a74-7e52-4032-9a3d-7137c2724e4d)
+
 

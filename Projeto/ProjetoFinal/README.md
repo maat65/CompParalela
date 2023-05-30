@@ -26,3 +26,19 @@ Considerações sobre a estratégia de paralelismo adotada e como isso auxiliou 
 
   -Ao separar o problema em duas threads, foi possível notar uma grande melhora no tempo do paralelo comparado ao serial, já que cada conta feita no código foi separada em duas threads acelerando o 
 processo de contas com números gigantes, onde foi necessário o uso do “#pragma omp critical” para que não houvesse nenhum problema de corrida durante a soma dos auxiliares.
+
+# Testes finais
+
+Com N = 20000 e precisão = 50000, teve 15064 digitos corretos
+
+Com N = 20000 e precisão = 100000, teve 30110 digitos corretos em 4m39s
+
+![image](https://github.com/maat65/CompParalela/assets/83376070/17c9feb4-97ab-4c1f-9f78-cc0c7f5c4cc0)
+
+Com N = 30000 e precisão = 120000, teve 36121 digitos corretos em 16m53s
+
+![image](https://github.com/maat65/CompParalela/assets/83376070/6490327f-e2bf-4bb2-9f85-c817fa611c50)
+
+E por ultimo com N = 50000 e precisão = 200000, tivemos 60204 digitos corretos por aproximadamente 1h, porém o tempo mostrado na tela é de 21m58s, pois durante a execução, o tempo no ambiente AWS acabou quando estava esperando por cerca de 40m
+
+![image](https://github.com/maat65/CompParalela/assets/83376070/01523a74-7e52-4032-9a3d-7137c2724e4d)

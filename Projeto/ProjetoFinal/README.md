@@ -25,7 +25,8 @@ Considerações sobre a estratégia de paralelismo adotada e como isso auxiliou 
 
 
   -Ao separar o problema em duas threads, foi possível notar uma grande melhora no tempo do paralelo comparado ao serial, já que cada conta feita no código foi separada em duas threads acelerando o 
-processo de contas com números gigantes, onde foi necessário o uso do “#pragma omp critical” para que não houvesse nenhum problema de corrida durante a soma dos auxiliares.
+processo de contas com números gigantes, onde foi necessário o uso do “#pragma omp critical” para que não houvesse nenhum problema de corrida durante a soma dos auxiliares. E durante o andar do projeto 
+fui tentando melhorar ao máximo com o que podia, passando a apenas dar commit nos código que eu sentia uma diferença no tempo, já que muito das minhas tentativas não resultavam em melhora ou até pioravam.
 
 # Testes finais
 

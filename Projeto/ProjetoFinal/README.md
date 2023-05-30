@@ -9,7 +9,9 @@ threads que pode ser utilizado são duas, então cada thread foi separada dessa 
 guardará a soma desses valores todos em uma variável “aux”, já a segunda thread calcula os termos que possuem o índice pares, sendo eles 1/2!, 1/4!, 1/6! e assim por diante também, onde também guardará a
 soma desses valores em uma variável “aux”. Após todas contas serem feitas e armazenadas em “aux”, na parte final do código terá o “#pragma omp critical”, que serve para que somente uma thread de cada vez
 possa fazer o comando que se encontra dentro desse diretório, e dentro dele terá “mpf_add(euler, euler, aux)” que fará com que cada thread pegue sua variável “aux”, onde todo valor está armazenado, e some
-em outra variável “euler”, que é onde estará o valor final de euler. E para utilização de threads foi usada a biblioteca “omp.h”, e para a realização de cálculos de melhor precisão foi usada a “gmp.h”.
+em outra variável “euler”, que é onde estará o valor final de euler. E para que eu pudesse utilizar threads, usei a biblioteca "omp.h" que também possui o "#pragma omp critical" que também foi muito
+importante para o funcionamento do código já que sua função é que todo código que se encontra dentro de seu diretório, faça com que apenas uma thread por cada vez possa entrar nele e executar o que é 
+pedido nele, e para a realização de cálculos de melhor precisão foi usada a “gmp.h”, que também foi muito importante para que eu pudesse encontrar a constante euler com a melhor precisão possível.
 
 
 Qual foi o speedup da última versão  e como eles fizeram para melhorar
